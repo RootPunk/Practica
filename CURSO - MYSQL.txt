@@ -1,0 +1,128 @@
+								CURSO MYSQL
+========================================================================================================================
+
+
+- show databases;  ===> para ver las BD 
+- use nombredelaBD; ===> Para seleccionar y usa una BD
+- show tables; ===> Para mostrar las tablas de una BD
+- describe nombredelatabla; ==> para ver como esta compuesta una tabla
+
+
+VARIABLES PARA CADA CAMPO
+============================
+
+Debemos usar los tipos de datos adecuados para cada campo
+TODOS ESTOS CONSUMEN MENOS RECURSOS
+
+- varchar(entero 10000000 - 829872823232) , 8 btis;
+- tinyint(enero chiquito 0 -127)
+- decimal
+
+smallint = contiene 0 a 65,535(2 bytes)
+mediumint = contiene de 0 a 16,777.215(3 bytes)
+int = contiene de 0 a 4294..... etc(4 bytes)
+
+
+ - ZEROPFILL = rellena con 0 los valores que no alcanzas a completar el maximo designado
+ - UNSIGNED = permite datos postivios apartir de 0
+
+create table ejemplo(tinyint unsigned) ==> creamos un campo que tenra solo campos positivos
+
+create table ejmplo2(tinyint zerofill) ==> creamos un campo que tendra enteros pero si no logra completa los 127 que equivale tinyint lo rellenara con 0
+
+
+
+INSERCION DE DATOS
+========================
+
+- insert into nombredelatabla(campo1,capo2,campo3) values('',',',''); ===> metodo1
+
+- insert into nombredelatabla(campo1,capo2,campo3) values('',',','') , ('',',','') , ('',',','') ; ==> insertar varios       valores en una misma insercion
+
+
+CARGAR DATOS DE UN ARCHIVO TXT
+==================================
+
+- Guaardar el archivo txt en esta ruta = C:\wamp\bin\mysql\mysql5.6.17\data\nombredetuBD
+
+- load data infile "nombredelarchivotxt" into table nombredelatabla; = para cargar los datos de un archivo txt
+
+
+BUSCAQUE LIKE
+==============
+
+"Jho%" = Buscara aquellos nombre que empiezen con Jho
+
+"e%" = Buscara todos los nombre que comienzen con la letra e
+
+"%e%" = Buscara todos los nombre que contengan una e
+
+"%e%e" = Busca nombre que tengan una e y terminen con una e
+
+"%e" = Busca nombre que terminen con una e
+
+
+MODIFICACION  DE TABLAS
+============================
+
+
+alter table nombredelatabla add nuevocampo tipodedato ==> añadir un campo a una tabla con un tipo de dato
+alter table nombredelatabla drop nombredelcampo ==> elimina un campo de una tabla
+alter table nombredelatabla change nombredelcampo nombredelnuevocampo tipodedatodelnuevocampo = reemplazar el nombre y el tipo de dato de un campo
+
+alter table nombredelatabla rename nombrenuevoparalatabla = cambiar de nombre a una tabla
+
+
+
+FORMATO DE FECHA
+==========================
+
+SELECT date_format(cumpleaños,'%m/%d/%Y') FROM USUARIO; = le damos formato de fecha a cumpleaños mostrandonos el dia,mes y año 
+
+%d = dia 0 - 31
+
+%y = devuelve el año en 4 numeros
+
+%m = devuelce el mes 0 - 12
+
+%w = nombre dia de la semana
+
+%M = nombre del mes
+
+%a = nombre del dia de la semana
+
+%Y = formato 4 digitos
+
+current-date() = es la fecha actual
+
+now() = nos devuelve fecha y hora actual
+
+Puedes usar month,day,dayofmonth,dayofyear ==> select month(cumpleaños) from usuario;
+
+
+select year(now()) - year(cumpleaños) from usuario; ==>estamos sacando la edad
+
+
+
+CONCATENCION DE DATOS
+====================================
+
+select concat(nombre,' ',apellido) as Nombre_Completo from usuario; ==> concatena los campos 
+
+
+SACANDO STRING
+=====================
+
+select right(cumpleaños,5) from usuario ==> tomara los 5 datos que estan a su derecha del campo cumpleñaos
+
+
+
+FORMATOS DE SALIdA
+=====================
+
+SELECT * FROM customer\G; ==> de manera vertical
+
+select distinct(nombre) from usuario ==> DISTINCT hace que un valor no se repita
+
+
+
