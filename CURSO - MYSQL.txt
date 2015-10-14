@@ -8,7 +8,7 @@
 - describe nombredelatabla; ==> para ver como esta compuesta una tabla
 
 
-VARIABLES PARA CADA CAMPO
+VARIABLES PARA CADA CAMPO EN MYSQL
 ============================
 
 Debemos usar los tipos de datos adecuados para cada campo
@@ -66,7 +66,7 @@ MODIFICACION  DE TABLAS
 ============================
 
 
-alter table nombredelatabla add nuevocampo tipodedato ==> añadir un campo a una tabla con un tipo de dato
+alter table nombredelatabla add nuevocampo tipodedato ==> aÃ±adir un campo a una tabla con un tipo de dato
 alter table nombredelatabla drop nombredelcampo ==> elimina un campo de una tabla
 alter table nombredelatabla change nombredelcampo nombredelnuevocampo tipodedatodelnuevocampo = reemplazar el nombre y el tipo de dato de un campo
 
@@ -77,11 +77,11 @@ alter table nombredelatabla rename nombrenuevoparalatabla = cambiar de nombre a 
 FORMATO DE FECHA
 ==========================
 
-SELECT date_format(cumpleaños,'%m/%d/%Y') FROM USUARIO; = le damos formato de fecha a cumpleaños mostrandonos el dia,mes y año 
+SELECT date_format(cumpleaÃ±os,'%m/%d/%Y') FROM USUARIO; = le damos formato de fecha a cumpleaÃ±os mostrandonos el dia,mes y aÃ±o 
 
 %d = dia 0 - 31
 
-%y = devuelve el año en 4 numeros
+%y = devuelve el aÃ±o en 4 numeros
 
 %m = devuelce el mes 0 - 12
 
@@ -97,10 +97,10 @@ current-date() = es la fecha actual
 
 now() = nos devuelve fecha y hora actual
 
-Puedes usar month,day,dayofmonth,dayofyear ==> select month(cumpleaños) from usuario;
+Puedes usar month,day,dayofmonth,dayofyear ==> select month(cumpleaÃ±os) from usuario;
 
 
-select year(now()) - year(cumpleaños) from usuario; ==>estamos sacando la edad
+select year(now()) - year(cumpleaÃ±os) from usuario; ==>estamos sacando la edad
 
 
 
@@ -113,7 +113,7 @@ select concat(nombre,' ',apellido) as Nombre_Completo from usuario; ==> concaten
 SACANDO STRING
 =====================
 
-select right(cumpleaños,5) from usuario ==> tomara los 5 datos que estan a su derecha del campo cumpleñaos
+select right(cumpleaÃ±os,5) from usuario ==> tomara los 5 datos que estan a su derecha del campo cumpleÃ±aos
 
 
 
