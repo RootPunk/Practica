@@ -24,7 +24,7 @@ https://devcode.la/cursos/curso-basico-de-laravel/#clases/curso-basico-de-larave
 http://laraveles.com/docs/5.1/homestead
 
 
-http://luiscalderon.ing-sistemas.com/ebooks/La_Biblia_de_PHP.pdf
+http://luiscalderon.ing-sistemas.com/ebooks/La_Biblia_de_PHP.pdf ==> OENE2
 
 http://blog.hacknic.com/index.php/2015/10/12/usar-youtube-desde-la-termina-hacker-way/
 
