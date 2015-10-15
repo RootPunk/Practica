@@ -1,0 +1,7 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/wamp/www/Justu_Prohibido/plugin/paginar.js",
+        "C:/wamp/www/Justu_Prohibido/grafico/exporting-server/java/highcharts-export/highcharts-export-convert/src/main/resources/phantomjs/solid-gauge.js",
+        "C:/wamp/www/Justu_Prohibido/plugin/query_table.js"
+    ]
+}

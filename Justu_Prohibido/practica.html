@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>PERRO BUENO</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="plugin/jquery-ui/jquery-ui.css">
+    </head>
+    <body>
+      <div class="container well" id="contenedor">
+            <div class="form-horizontal">
+               <form id="formulario">
+      
+      <div class="row">
+      <div class="col-sm-12">
+          <center><h1>Perfil de Usuario</h1></center>
+      </div>
+      </div>
+      <br>
+      
+      <div class="form-group">
+      <label class="col-ms-12 control-label" for="form-group">Nombre</label>
+      <div class="input-group col-sm-12">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+      <input type="text" class="form-control" placeholder="Inregse su Nombre" name="nom" id="nombre">
+      </div>
+      </div>
+      
+      <div class="form-group">
+      <label class="col-ms-12 control-label" for="form-group">Apellido</label>
+      <div class="input-group col-sm-12">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+      <input type="text" class="form-control" placeholder="Inregse su Apellido"  name="ape" id="apellido">
+      </div>
+      </div>
+      
+      <div class="form-group">
+      <label class="col-ms-12 control-label" for="form-group">Edad</label>
+      <div class="input-group col-sm-12">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+      <input type="text" class="form-control" placeholder="Inregse su Edad" name="eda" id="edad">
+      </div>
+      </div>
+      
+      <div class="form-group">
+      <label class="col-ms-12 control-label" for="form-group">Correo</label>
+      <div class="input-group col-sm-12">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+      <input type="text" class="form-control" placeholder="Inregse su Correo" name="cor" id="correo">
+      </div>
+      </div>
+      
+      <div class="form-group">
+      <label class="col-ms-12 control-label" for="form-group">Telefono</label>
+      <div class="input-group col-sm-12">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+      <input type="text" class="form-control" placeholder="Inregse su Telefono" name="tel" id="telefono">
+      </div>
+      </div>
+      <br>
+      
+      
+      <div class="form-group">
+      <div class="input-group col-sm-12">
+      <button type="button" class="btn btn-primary btn-lg btn-block" id="boton"><font size="5">Registrar</font></button>
+      </div>
+      </div>
+      
+       
+          </form>
+          <div id="res">
+            
+          </div>
+            </div>
+          </div>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="plugin/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript">
+$('document').ready(function(){
+  $('#boton').click(function(){
+    var a = $("#nombre").val();
+    var b = $("#apellido").val();
+    var c = $("#edad").val();
+    var d = $("#correo").val();
+    var e = $("#telefono").val();
+
+    if(a!="" && b!="" && c!="" && d!="" && e!="")
+    {
+      var datos = $("#formulario").serialize();
+
+      $.ajax({
+        url:"Config/usuario/registrar.php",
+        type:"POST",
+        data:datos
+      }).done(function(data){
+        $("#res").html(data);
+      }).error(function() {
+        alert("A OCURRIDO UN ERROR");
+      });
+    }
+    else
+    {
+     alert("LLENE TODOS LOS CAMPOS");
+    }
+  });
+});
+</script>
+    </body>
+</html>

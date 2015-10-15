@@ -1,0 +1,528 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inpu",
+				"inputt	input - text"
+			],
+			[
+				"input",
+				"inputt	input - tel"
+			],
+			[
+				"mysq",
+				"mysql_pconnect"
+			],
+			[
+				"mysql",
+				"mysql_connect"
+			],
+			[
+				"html",
+				"html	.html()"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"backgro",
+				"background"
+			],
+			[
+				"me",
+				"method	Attr"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"sty",
+				"style	Attr"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"N",
+				"negativo"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"t",
+				"td	<td>"
+			],
+			[
+				"td",
+				"td	<td>"
+			],
+			[
+				"bo",
+				"bold"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"hea",
+				"header	<header>"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"MAR",
+				"margin-left"
+			],
+			[
+				"fi",
+				"fixed"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"wiD",
+				"width"
+			],
+			[
+				"alig",
+				"vertical-align"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"bkac",
+				"background-color"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"hr",
+				"href	Attr"
+			],
+			[
+				"in",
+				"input	input - checkbox"
+			],
+			[
+				"so",
+				"sockets"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"for",
+				"formulario"
+			],
+			[
+				"sc",
+				"script	Tag"
+			],
+			[
+				"new",
+				"newUser"
+			],
+			[
+				"fu",
+				"Function"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"wid",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pac",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"html5",
+				"Set Syntax: HTML5"
+			],
+			[
+				"html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"php",
+				"Snippet: <?php … ?>"
+			],
+			[
+				"PACK",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"snipp",
+				"Snippet: Function"
+			],
+			[
+				"PHP",
+				"Snippet: <?php … ?>"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pa	",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta	",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404­9; + 'e330c659d4bb41d3bdf022e94cab3cd0­9;; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlop­en( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) ",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlop­en( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/Justu_Prohibido/Config/usuario/login.php",
+		"/C/wamp/www/Justu_Prohibido/practica.html",
+		"/C/Users/Jhosep/AppData/Roaming/Sublime Text 3/Packages/User/boton.sublime-snippet",
+		"/C/wamp/www/Justu_Prohibido/form_simple.html",
+		"/C/Users/Jhosep/AppData/Roaming/Sublime Text 3/Packages/User/texto.sublime-snippet",
+		"/C/wamp/www/Justu_Prohibido/modal.html",
+		"/C/wamp/www/Tesis/index.html",
+		"/H/OTROS/foundation/imagenes.html",
+		"/C/Users/Jhosep/Desktop/gentelella-master/production/index.html",
+		"/H/OTROS/foundation/formulario.html",
+		"/C/Users/Jhosep/Desktop/Index/index.html",
+		"/C/Users/Jhosep/Desktop/Index/main.js",
+		"/C/Users/Jhosep/Desktop/Index/form.php",
+		"/C/Users/Jhosep/Desktop/Index/libreria1.php",
+		"/H/OTROS/foundation/barra.html",
+		"/H/OTROS/foundation/practica.html",
+		"/C/Users/Jhosep/Desktop/Index/jquery.js",
+		"/C/wamp/www/EMPRESA/index.php",
+		"/C/Users/Jhosep/AppData/Roaming/Sublime Text 3/Packages/User/vista.sublime-build",
+		"/C/Users/Jhosep/Desktop/CAPCHITA.HTML",
+		"/C/Users/Jhosep/Desktop/ordenar/boottrap/imagenes.html",
+		"/C/Users/Jhosep/Desktop/pagina2.html",
+		"/C/Users/Jhosep/Desktop/boottrap/imagenes.html",
+		"/C/Users/Jhosep/Desktop/boottrap/barra.html",
+		"/C/Users/Jhosep/Desktop/boottrap/practica.html",
+		"/C/Users/Jhosep/Desktop/boottrap/bootstrap/fonts/glyphicons-halflings-regular.svg",
+		"/C/Users/Jhosep/Desktop/boottrap/WEB.html",
+		"/C/Users/Jhosep/Desktop/boottrap/estilo/estilo.css",
+		"/C/Users/Jhosep/Desktop/boottrap/estilo",
+		"/C/Users/Jhosep/Desktop/boottrap/css/my.css",
+		"/C/Users/Jhosep/Desktop/boottrap/probar.html",
+		"/C/Users/Jhosep/Desktop/boottrap/formulario.html",
+		"/C/Users/Jhosep/Desktop/boottrap/probar",
+		"/C/Users/Jhosep/Desktop/boottrap/Login.html",
+		"/C/Users/Jhosep/Desktop/boottrap/acordeon.html",
+		"/C/Users/Jhosep/Desktop/boottrap/alerta.html",
+		"/C/Users/Jhosep/Desktop/boottrap/malo.html",
+		"/C/Users/Jhosep/Desktop/package.json",
+		"/C/Users/Jhosep/Desktop/chat/index.html",
+		"/C/Users/Jhosep/Desktop/chat/jhosep.js",
+		"/C/Users/Jhosep/Desktop/chat/saludo.html",
+		"/C/Users/Jhosep/Desktop/chat/estilo.css",
+		"/C/Users/Jhosep/Desktop/chat/hola.html",
+		"/C/Users/Jhosep/Desktop/index.html",
+		"/C/Users/Jhosep/Desktop/Prubea/diseño.css",
+		"/C/Program Files/Sublime Text 3/changelog.txt",
+		"/C/Users/Jhosep/Desktop/Prubea/java.js",
+		"/C/Users/Jhosep/Desktop/java.js",
+		"/C/Users/Jhosep/Desktop/diseño.css",
+		"/C/Users/Jhosep/Desktop/Index.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Live",
+			"Network Activities",
+			">\n",
+			"	\n",
+			"lista",
+			"lista ",
+			"lista",
+			"jpg",
+			"ms",
+			"4",
+			"md",
+			"ajax",
+			"?>",
+			"re",
+			"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"6"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": true,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "",
+	"project": "Login.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 143.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

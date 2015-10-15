@@ -1,0 +1,156 @@
+<html>
+	<head>
+        <link href="ultima/BT/css/bootstrap.min.css" rel="stylesheet">     
+ <script src="ultima/jquery.js"></script>
+ <script src="ultima/notify.js"></script>
+ <script src="ultima/notify.min.js"></script>
+  <script src="ultima/BT/js/bootstrap.min.js"></script>
+<style>
+
+ 
+   #boton{
+ 	 width:150px;
+ }
+    #boton2{
+ 	 width:150px;
+       }
+ 
+ #contenido{
+     width:550px;
+ }
+ 
+ .modal {
+position: fixed;
+right: o;
+top: 40px;
+}
+.modal-header,
+.btn-custom {
+	background: #2fd09e;
+	color: black;
+    
+}
+
+.popover   {
+	background-color: #e74c3c;
+	color: #f1ecec;
+	width: 120px;
+}
+.popover.right .arrow:after {
+	border-right-color: #e74c3c;
+}
+.input-group[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+}	
+</style>
+<script>
+	$('document').ready(function(){
+				$('#boton').click(function(){
+                var no = $('#nombre').val();
+                var ap = $('#apellido').val();
+                var ed = $('#edad').val();
+                var co = $('#correo').val();
+                var te = $('#telefono').val();
+					
+                                        if($('#nombre').val()!="" && $('#apellido').val()!="" && $('#edad').val()!="" && $('#correo').val()!="" && $('#telefono').val()!=""){
+					
+					jQuery.post("db.php", {
+						nom:no,
+						ape:ap,
+                                                eda:ed,
+						cor:co,
+                                                tel:te,
+                                                success : function() {
+                                                $.notify("Uusario Registrado", "success");
+                                                        $('#nombre').val('');
+                                                        $('#apellido').val('');
+                                                        $('#edad').val('');
+                                                        $('#correo').val('');
+                                                        $('#telefono').val('');
+                                                  }
+						
+					})
+                                        }
+                                        else
+                                        {
+                                             $.notify("Ingrese Todos los Cmpaos porfavor", "error");
+
+                                                        };
+				});
+			});
+               </script>          
+	</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+ <a href="#myModal" role="button" class="btn btn-custom" data-toggle="modal">Open Contact Form Peru</a>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" id="contenido">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                
+                <center><h4 class="modal-title">Nuevo Registro</h4></center>
+            </div>
+
+            <div class="modal-body">
+                <!-- The form is placed inside the body of modal -->
+                <form id="loginForm" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label" >Nombre</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="nombre" id="nombre" required/>
+                            
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label" >Apellido</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="apellido" id="apellido" required/>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Edad</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="edad" id="edad" required/>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Correo</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="coreo" id="correo" required/>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Telefono</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="telefono" id="telefono" required/>
+                             
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-8 col-xs-offset-3">
+                            <center><button type="button" class="btn btn-primary" id="boton">Registrar</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal" id="boton2">Cancel</button></center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

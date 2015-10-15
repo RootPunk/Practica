@@ -1,0 +1,119 @@
+<html>
+	<head>
+        <link href="plugin/BT/css/bootstrap.min.css" rel="stylesheet">     
+ <script src="plugin/jquery.js"></script>
+ <script src="plugin/notify.js"></script>
+ <script src="plugin/notify.min.js"></script>
+  <script src="plugin/BT/js/bootstrap.min.js"></script>
+<style>
+ #contenedor{
+     width: 500px;
+ }
+
+ #formulario{
+     padding: 50px 30px 100px 30px;
+ }
+</style>
+<script>
+	$('document').ready(function(){
+				$('#boton').click(function(){
+                var no = $('#nombre').val();
+                var ap = $('#apellido').val();
+                var ed = $('#edad').val();
+                var co = $('#correo').val();
+                var te = $('#telefono').val();
+					
+                                        if($('#nombre').val()!="" && $('#apellido').val()!="" && $('#edad').val()!="" && $('#correo').val()!="" && $('#telefono').val()!=""){
+					
+					jQuery.post("db.php", {
+						nom:no,
+						ape:ap,
+                                                eda:ed,
+						cor:co,
+                                                tel:te,
+                                                success : function() {
+                                                $.notify("Uusario Registrado", "success");
+                                                        $('#nombre').val('');
+                                                        $('#apellido').val('');
+                                                        $('#edad').val('');
+                                                        $('#correo').val('');
+                                                        $('#telefono').val('');
+                                                  }
+						
+					})
+                                        }
+                                        else
+                                        {
+                                             $.notify("Ingrese Todos los Cmpaos porfavor", "error");
+
+                                                        };
+				});
+			});
+               </script>		
+	</head>
+<body>
+    <div class="container well" id="contenedor">
+    	<div class="form-horizontal">
+         <form method="POST" id="formulario">
+
+<div class="row">
+<div class="col-sm-12">
+    <center><h1>Perfil de Usuario</h1></center>
+</div>
+</div>
+<br>
+
+<div class="form-group">
+<label class="col-ms-12 control-label" for="form-group">Nombre</label>
+<div class="input-group col-sm-12">
+<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+<input type="text" class="form-control" placeholder="Inregse su Nombre" id="nombre">
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-ms-12 control-label" for="form-group">Apellido</label>
+<div class="input-group col-sm-12">
+<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+<input type="text" class="form-control" placeholder="Inregse su Apellido"  id="apellido">
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-ms-12 control-label" for="form-group">Edad</label>
+<div class="input-group col-sm-12">
+<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+<input type="text" class="form-control" placeholder="Inregse su Edad" id="edad">
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-ms-12 control-label" for="form-group">Correo</label>
+<div class="input-group col-sm-12">
+<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+<input type="text" class="form-control" placeholder="Inregse su Correo" id="correo">
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-ms-12 control-label" for="form-group">Telefono</label>
+<div class="input-group col-sm-12">
+<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+<input type="text" class="form-control" placeholder="Inregse su Telefono" id="telefono">
+</div>
+</div>
+<br>
+
+
+<div class="form-group">
+<div class="input-group col-sm-12">
+<button type="button" class="btn btn-primary btn-lg btn-block" id="boton"><font size="5">Registrar</font></button>
+</div>
+</div>
+
+ 
+    </form>
+    	</div>
+    </div>
+</body>
+</html>
